@@ -6,4 +6,11 @@
         <item name="android:textColor">@drawable/notification_header_text_color</item>
     </style>
     <style name="TextAppearance.StatusBar.IntruderAlert" parent="@*android:style/Theme.Holo.Light.Panel" />
+	<style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/tw_ab_transparent_dark_holo</item>
+    </style>
+    <style name="CustomTheme" parent="@*android:style/Theme">
+        <item name="android:windowTitleSize">50.0dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
 </resources>

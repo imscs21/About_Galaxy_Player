@@ -33,4 +33,32 @@
     <string name="fullchargetitle">정보</string>
     <string name="fullchargebattery">"배터리 충전이 완료되었습니다.
 충전기를 분리하세요"</string>
+    <string name="qp_airplane_text">"비행기\n탑승 모드"</string>
+    <string name="qp_autosync_text">"자동 
+\u0009동기화"</string>
+    <string name="qp_brightness_text">밝기</string>
+    <string name="qp_dc_text">"데이터 
+\u0009네트워크"</string>
+    <string name="qp_flashlight_text">플레시</string>
+    <string name="qp_gps_text">GPS</string>
+    <string name="qp_lockscreen_text">잠금 화면</string>
+    <string name="qp_network_mode_text">"네트워크 
+\u0009모드"</string>
+    <string name="qp_no">취소</string>
+    <string name="qp_reboot">재부팅</string>
+    <string name="qp_reboot_dlg_title">재부팅 옵션</string>
+    <string name="qp_reboot_download">다운로드 모드</string>
+    <string name="qp_reboot_recovery">리커버리 모드</string>
+    <string name="qp_reboot_text">재부팅</string>
+    <string name="qp_screen_timeout_hr">hour(s)</string>
+    <string name="qp_screen_timeout_min">minute(s)</string>
+    <string name="qp_screen_timeout_prefix">"Screen timeout set to: "</string>
+    <string name="qp_screen_timeout_sec">second(s)</string>
+    <string name="qp_screen_timeout_text">Screen Timeout</string>
+    <string name="qp_shutdown_text">종료</string>
+    <string name="qp_yes">확인</string>
+    <string name="autobright">자동</string>
+	<string name="usb_storage_activity_title">USB 대용량 저장소</string>
+	<string name="twelve_hour_time_format">aa h:mm</string>
+    <string name="twenty_four_hour_time_format">H:mm</string>
 </resources>

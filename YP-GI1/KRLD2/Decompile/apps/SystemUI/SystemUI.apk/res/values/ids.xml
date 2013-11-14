@@ -41,4 +41,8 @@
     <item type="id" name="number">false</item>
     <item type="id" name="content">false</item>
     <item type="id" name="close">false</item>
+    <item type="id" name="qp_button">false</item>
+    <item type="id" name="qp_button_image">false</item>
+    <item type="id" name="qp_button_indic">false</item>
+    <item type="id" name="qp_button_text">false</item>
 </resources>

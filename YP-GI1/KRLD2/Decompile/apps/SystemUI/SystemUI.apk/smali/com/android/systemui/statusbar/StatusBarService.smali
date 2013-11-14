@@ -2919,14 +2919,6 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarService;->mStatusBarView:Lcom/android/systemui/statusbar/StatusBarView;
-
-    invoke-virtual {v1}, Lcom/android/systemui/statusbar/StatusBarView;->getHeight()I
-
-    move-result v1
-
-    sub-int/2addr v0, v1
-
     iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarService;->mCloseView:Lcom/android/systemui/statusbar/CloseDragHandle;
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/CloseDragHandle;->getHeight()I
@@ -3680,6 +3672,52 @@
 
     move-result-object v9
 
+	check-cast v9, Lcom/android/systemui/statusbar/LatestItemContainer;
+
+    .local v9, row:Lcom/android/systemui/statusbar/LatestItemContainer;
+    move-object/from16 v0, v2
+
+    iget v0, v0, Landroid/app/Notification;->flags:I
+
+    move v4, v0
+
+    and-int/lit8 v4, v4, 0x2
+
+    if-nez v4, :cond_1
+
+    move-object/from16 v0, v2
+
+    iget v0, v0, Landroid/app/Notification;->flags:I
+
+    move v4, v0
+
+    and-int/lit8 v4, v4, 0x20
+
+    if-nez v4, :cond_1
+
+    new-instance v4, Lcom/android/systemui/statusbar/StatusBarService$8;
+
+    move-object v0, v4
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v7, p1
+
+    invoke-direct {v0, v1, v7}, Lcom/android/systemui/statusbar/StatusBarService$8;-><init>(Lcom/android/systemui/statusbar/StatusBarService;Lcom/android/internal/statusbar/StatusBarNotification;)V
+
+    move-object/from16 v0, v9
+
+    move-object v1, v4
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/LatestItemContainer;->setOnSwipeCallback(Ljava/lang/Runnable;)V
+
+    .line 735
+    .line 581
+    :cond_1
+	const v1, 0x7f090027
+	
+	invoke-virtual {v9, v1}, Lcom/android/systemui/statusbar/LatestItemContainer;->findViewById(I)Landroid/view/View;
+
     .line 612
     const v1, 0x7f090027
 
@@ -3725,7 +3763,7 @@
     invoke-virtual {v7, v1}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 624
-    :cond_1
+    :cond_9
     :try_start_0
     invoke-virtual {v8, p0, v7}, Landroid/widget/RemoteViews;->apply(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     :try_end_0
@@ -3862,7 +3900,7 @@
     :goto_0
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
 
-    const/16 v3, 0x7de
+    const/16 v3, 0x7d3
 
     const v4, 0x20300
 
@@ -4236,7 +4274,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/StatusBarService;->mTrackingPosition:I
 
     .line 1439
-    const/16 v1, 0x7de
+    const/16 v1, 0x7d3
 
     iput v1, v2, Landroid/view/WindowManager$LayoutParams;->type:I
 
@@ -5115,6 +5153,36 @@
     goto :goto_0
 .end method
 
+.method public settingsButton(Landroid/view/View;)V
+    .locals 3
+    .parameter "v"
+
+    .prologue
+    .line 1717
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.settings.SETTINGS"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const/high16 v2, 0x1000
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/StatusBarService;->animateCollapse()V
+
+    .line 1720
+    return-void
+.end method
+
 .method public showCallOnGoingView()V
     .locals 2
 
@@ -5210,13 +5278,6 @@
 
     const/4 v11, 0x1
 
-    .line 1491
-    iget-object v8, p0, Lcom/android/systemui/statusbar/StatusBarService;->mStatusBarView:Lcom/android/systemui/statusbar/StatusBarView;
-
-    invoke-virtual {v8}, Lcom/android/systemui/statusbar/StatusBarView;->getHeight()I
-
-    move-result v3
-
     .line 1492
     .local v3, h:I
     iget-object v8, p0, Lcom/android/systemui/statusbar/StatusBarService;->mDisplay:Landroid/view/Display;
@@ -5295,6 +5356,8 @@
 
     .line 1513
     :cond_2
+    const/4 v3, 0x0
+
     const/16 v8, -0x2711
 
     if-ne p1, v8, :cond_6

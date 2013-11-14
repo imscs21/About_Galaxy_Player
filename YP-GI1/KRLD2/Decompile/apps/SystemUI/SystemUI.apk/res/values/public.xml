@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <public type="drawable" name="btn_default_small" id="0x7f020001" />
+    <public type="drawable" name="quickpanel_btn_bg" id="0x7f020013" />
     <public type="drawable" name="stat_sys_gps_acquiring_anim" id="0x7f02006b" />
     <public type="drawable" name="stat_sys_roaming_cdma_flash" id="0x7f02007a" />
     <public type="drawable" name="shade_bgcolor" id="0x7f020099" />
     <public type="drawable" name="notification_header_text_color" id="0x7f02009a" />
     <public type="drawable" name="notification_number_text_color" id="0x7f02009b" />
+    <public type="drawable" name="ic_notify_quicksettings" id="0x7f0200e1" />
+    <public type="drawable" name="status_bar_close_on_jb" id="0x7f0200e2" />
+    <public type="drawable" name="tw_btn_default_small" id="0x7f0200e3" />
+    <public type="drawable" name="stat_sys_battery" id="0x7f0200e8" />
+    <public type="drawable" name="stat_sys_battery_charge" id="0x7f0200f1" />
+    <public type="drawable" name="maintitleicon" id="0x7f020103" />
+    <public type="drawable" name="titlebar_clickable_bg" id="0x7f020104" />
     <public type="drawable" name="battery_low_battery" id="0x7f020000" />
     <public type="drawable" name="btn_default_small_normal" id="0x7f020002" />
     <public type="drawable" name="btn_default_small_normal_disable" id="0x7f020003" />
@@ -135,12 +143,11 @@
     <public type="drawable" name="statusbar_background" id="0x7f020096" />
     <public type="drawable" name="title_bar_portrait" id="0x7f020097" />
     <public type="drawable" name="title_bar_shadow" id="0x7f020098" />
-    <public type="drawable" name="quickpanel_icon_bluetooth" id="0x7f02000b" />
+    <public type="drawable" name="qp_bluetooth_ing" id="0x7f02000b" />
     <public type="drawable" name="quickpanel_icon_gps" id="0x7f02000f" />
-    <public type="drawable" name="quickpanel_icon_ing" id="0x7f020012" />
-    <public type="drawable" name="quickpanel_icon_off" id="0x7f020013" />
-    <public type="drawable" name="quickpanel_icon_on" id="0x7f020014" />
-    <public type="drawable" name="quickpanel_icon_rotation" id="0x7f020015" />
+    <public type="drawable" name="quickpanel_bg_press" id="0x7f020012" />
+    <public type="drawable" name="stat_ing_off" id="0x7f020014" />
+    <public type="drawable" name="stat_sys_data_connected_h_plus" id="0x7f020015" />
     <public type="drawable" name="quickpanel_icon_silent" id="0x7f020018" />
     <public type="drawable" name="quickpanel_icon_sound_on" id="0x7f02001a" />
     <public type="drawable" name="quickpanel_icon_sound_vibration" id="0x7f02001c" />
@@ -156,6 +163,106 @@
     <public type="drawable" name="stat_sys_data_wimax_signal_3_fully" id="0x7f020067" />
     <public type="drawable" name="stat_sys_data_wimax_signal_disconnected" id="0x7f020068" />
     <public type="drawable" name="stat_sys_data_wimax_signal_idle" id="0x7f020069" />
+    <public type="drawable" name="ic_notify_quicksettings_normal" id="0x7f02009c" />
+    <public type="drawable" name="ic_notify_quicksettings_pressed" id="0x7f02009d" />
+    <public type="drawable" name="qp_airplane_off" id="0x7f02009e" />
+    <public type="drawable" name="qp_airplane_on" id="0x7f02009f" />
+    <public type="drawable" name="qp_bg" id="0x7f0200a0" />
+    <public type="drawable" name="qp_bg_ing" id="0x7f0200a1" />
+    <public type="drawable" name="qp_bg_off" id="0x7f0200a2" />
+    <public type="drawable" name="qp_bg_on" id="0x7f0200a3" />
+    <public type="drawable" name="qp_bluetooth_off" id="0x7f0200a4" />
+    <public type="drawable" name="qp_bluetooth_on" id="0x7f0200a5" />
+    <public type="drawable" name="qp_brightness_auto" id="0x7f0200a6" />
+    <public type="drawable" name="qp_brightness_bg" id="0x7f0200a7" />
+    <public type="drawable" name="qp_brightness_max" id="0x7f0200a8" />
+    <public type="drawable" name="qp_brightness_mid" id="0x7f0200a9" />
+    <public type="drawable" name="qp_brightness_min" id="0x7f0200aa" />
+    <public type="drawable" name="qp_brightness_off" id="0x7f0200ab" />
+    <public type="drawable" name="qp_brightness_on" id="0x7f0200ac" />
+    <public type="drawable" name="qp_data_off" id="0x7f0200ad" />
+    <public type="drawable" name="qp_data_on" id="0x7f0200ae" />
+    <public type="drawable" name="qp_flashlight_off" id="0x7f0200af" />
+    <public type="drawable" name="qp_flashlight_on" id="0x7f0200b0" />
+    <public type="drawable" name="qp_gps_off" id="0x7f0200b1" />
+    <public type="drawable" name="qp_gps_on" id="0x7f0200b2" />
+    <public type="drawable" name="qp_ic_dlg" id="0x7f0200b3" />
+    <public type="drawable" name="qp_lock_screen_off" id="0x7f0200b4" />
+    <public type="drawable" name="qp_lock_screen_on" id="0x7f0200b5" />
+    <public type="drawable" name="qp_orientation_off" id="0x7f0200b6" />
+    <public type="drawable" name="qp_orientation_on" id="0x7f0200b7" />
+    <public type="drawable" name="qp_reboot" id="0x7f0200b8" />
+    <public type="drawable" name="qp_ring_on" id="0x7f0200b9" />
+    <public type="drawable" name="qp_ring_vibrate_on" id="0x7f0200ba" />
+    <public type="drawable" name="qp_screen_timeout_10m" id="0x7f0200bb" />
+    <public type="drawable" name="qp_screen_timeout_15s" id="0x7f0200bc" />
+    <public type="drawable" name="qp_screen_timeout_1m" id="0x7f0200bd" />
+    <public type="drawable" name="qp_screen_timeout_2m" id="0x7f0200be" />
+    <public type="drawable" name="qp_screen_timeout_30s" id="0x7f0200bf" />
+    <public type="drawable" name="qp_screen_timeout_unknown" id="0x7f0200c0" />
+    <public type="drawable" name="qp_shutdown" id="0x7f0200c1" />
+    <public type="drawable" name="qp_silent" id="0x7f0200c2" />
+    <public type="drawable" name="qp_sync_off" id="0x7f0200c3" />
+    <public type="drawable" name="qp_sync_on" id="0x7f0200c4" />
+    <public type="drawable" name="qp_vibrate_off" id="0x7f0200c5" />
+    <public type="drawable" name="qp_wifi_off" id="0x7f0200c6" />
+    <public type="drawable" name="qp_wifi_on" id="0x7f0200c7" />
+    <public type="drawable" name="stat_sys_data_connected_lte" id="0x7f0200c8" />
+    <public type="drawable" name="stat_sys_data_fully_connected_h_plus" id="0x7f0200c9" />
+    <public type="drawable" name="stat_sys_data_fully_connected_lte" id="0x7f0200ca" />
+    <public type="drawable" name="stat_sys_data_fully_in_h_plus" id="0x7f0200cb" />
+    <public type="drawable" name="stat_sys_data_fully_in_lte" id="0x7f0200cc" />
+    <public type="drawable" name="stat_sys_data_fully_inandout_h_plus" id="0x7f0200cd" />
+    <public type="drawable" name="stat_sys_data_fully_inandout_lte" id="0x7f0200ce" />
+    <public type="drawable" name="stat_sys_data_fully_out_h_plus" id="0x7f0200cf" />
+    <public type="drawable" name="stat_sys_data_fully_out_lte" id="0x7f0200d0" />
+    <public type="drawable" name="stat_sys_data_in_h_plus" id="0x7f0200d1" />
+    <public type="drawable" name="stat_sys_data_in_lte" id="0x7f0200d2" />
+    <public type="drawable" name="stat_sys_data_inandout_h_plus" id="0x7f0200d3" />
+    <public type="drawable" name="stat_sys_data_inandout_lte" id="0x7f0200d4" />
+    <public type="drawable" name="stat_sys_data_out_h_plus" id="0x7f0200d5" />
+    <public type="drawable" name="stat_sys_data_out_lte" id="0x7f0200d6" />
+    <public type="drawable" name="stat_sys_r_signal_5" id="0x7f0200d7" />
+    <public type="drawable" name="stat_sys_r_signal_5_fully" id="0x7f0200d8" />
+    <public type="drawable" name="stat_sys_ringer_silentvibrate" id="0x7f0200d9" />
+    <public type="drawable" name="stat_sys_signal_5" id="0x7f0200da" />
+    <public type="drawable" name="stat_sys_signal_5_fully" id="0x7f0200db" />
+    <public type="drawable" name="status_bar_close_on_p" id="0x7f0200dc" />
+    <public type="drawable" name="translucence" id="0x7f0200dd" />
+    <public type="drawable" name="tw_quick_panel_icon_silent_mode_on_off" id="0x7f0200de" />
+    <public type="drawable" name="tw_quick_panel_icon_silent_mode_on_on" id="0x7f0200df" />
+    <public type="drawable" name="tw_quick_panel_icon_silent_on" id="0x7f0200e0" />
+    <public type="drawable" name="tw_quick_panel_clearbtn_focus" id="0x7f0200e4" />
+    <public type="drawable" name="tw_quick_panel_clearbtn_normal" id="0x7f0200e5" />
+    <public type="drawable" name="tw_quick_panel_clearbtn_press" id="0x7f0200e6" />
+    <public type="drawable" name="tw_quick_panel_clearbtn_select" id="0x7f0200e7" />
+    <public type="drawable" name="stat_sys_battery_0" id="0x7f0200e9" />
+    <public type="drawable" name="stat_sys_battery_100" id="0x7f0200ea" />
+    <public type="drawable" name="stat_sys_battery_15" id="0x7f0200eb" />
+    <public type="drawable" name="stat_sys_battery_28" id="0x7f0200ec" />
+    <public type="drawable" name="stat_sys_battery_43" id="0x7f0200ed" />
+    <public type="drawable" name="stat_sys_battery_57" id="0x7f0200ee" />
+    <public type="drawable" name="stat_sys_battery_71" id="0x7f0200ef" />
+    <public type="drawable" name="stat_sys_battery_85" id="0x7f0200f0" />
+    <public type="drawable" name="stat_sys_battery_charge_anim0" id="0x7f0200f2" />
+    <public type="drawable" name="stat_sys_battery_charge_anim100" id="0x7f0200f3" />
+    <public type="drawable" name="stat_sys_battery_charge_anim15" id="0x7f0200f4" />
+    <public type="drawable" name="stat_sys_battery_charge_anim28" id="0x7f0200f5" />
+    <public type="drawable" name="stat_sys_battery_charge_anim43" id="0x7f0200f6" />
+    <public type="drawable" name="stat_sys_battery_charge_anim57" id="0x7f0200f7" />
+    <public type="drawable" name="stat_sys_battery_charge_anim71" id="0x7f0200f8" />
+    <public type="drawable" name="stat_sys_battery_charge_anim85" id="0x7f0200f9" />
+    <public type="drawable" name="stat_sys_battery_not_charge_0" id="0x7f0200fa" />
+    <public type="drawable" name="stat_sys_battery_not_charge_100" id="0x7f0200fb" />
+    <public type="drawable" name="stat_sys_battery_not_charge_15" id="0x7f0200fc" />
+    <public type="drawable" name="stat_sys_battery_not_charge_28" id="0x7f0200fd" />
+    <public type="drawable" name="stat_sys_battery_not_charge_43" id="0x7f0200fe" />
+    <public type="drawable" name="stat_sys_battery_not_charge_57" id="0x7f0200ff" />
+    <public type="drawable" name="stat_sys_battery_not_charge_71" id="0x7f020100" />
+    <public type="drawable" name="stat_sys_battery_not_charge_85" id="0x7f020101" />
+    <public type="drawable" name="stat_sys_battery_unknown" id="0x7f020102" />
+    <public type="drawable" name="tw_ab_transparent_dark_holo" id="0x7f020105" />
+    <public type="drawable" name="tw_ic_ab_back_holo_dark" id="0x7f020106" />
     <public type="layout" name="battery_discharge" id="0x7f030000" />
     <public type="layout" name="battery_low" id="0x7f030001" />
     <public type="layout" name="quickpanel_quick_settings" id="0x7f030002" />
@@ -165,6 +272,12 @@
     <public type="layout" name="status_bar_icon" id="0x7f030006" />
     <public type="layout" name="status_bar_latest_event" id="0x7f030007" />
     <public type="layout" name="status_bar_tracking" id="0x7f030008" />
+    <public type="layout" name="power_widget_layout" id="0x7f030009" />
+    <public type="layout" name="qp_brightness" id="0x7f03000a" />
+    <public type="layout" name="qp_button" id="0x7f03000b" />
+    <public type="layout" name="qp_layout" id="0x7f03000c" />
+    <public type="layout" name="qp_scrollview" id="0x7f03000d" />
+    <public type="layout" name="storage_title_bar" id="0x7f03000e" />
     <public type="xml" name="bookmarks" id="0x7f040000" />
     <public type="bool" name="config_hspa_data_distinguishable" id="0x7f050000" />
     <public type="bool" name="config_status_bar_brightness" id="0x7f050001" />
@@ -202,8 +315,37 @@
     <public type="string" name="dischargebattery" id="0x7f07001e" />
     <public type="string" name="fullchargetitle" id="0x7f07001f" />
     <public type="string" name="fullchargebattery" id="0x7f070020" />
+    <public type="string" name="qp_airplane_text" id="0x7f070021" />
+    <public type="string" name="qp_autosync_text" id="0x7f070022" />
+    <public type="string" name="qp_brightness_text" id="0x7f070023" />
+    <public type="string" name="qp_dc_text" id="0x7f070024" />
+    <public type="string" name="qp_flashlight_text" id="0x7f070025" />
+    <public type="string" name="qp_gps_text" id="0x7f070026" />
+    <public type="string" name="qp_lockscreen_text" id="0x7f070027" />
+    <public type="string" name="qp_network_mode_text" id="0x7f070028" />
+    <public type="string" name="qp_no" id="0x7f070029" />
+    <public type="string" name="qp_reboot" id="0x7f07002a" />
+    <public type="string" name="qp_reboot_dlg_title" id="0x7f07002b" />
+    <public type="string" name="qp_reboot_download" id="0x7f07002c" />
+    <public type="string" name="qp_reboot_recovery" id="0x7f07002d" />
+    <public type="string" name="qp_reboot_text" id="0x7f07002e" />
+    <public type="string" name="qp_screen_timeout_hr" id="0x7f07002f" />
+    <public type="string" name="qp_screen_timeout_min" id="0x7f070030" />
+    <public type="string" name="qp_screen_timeout_prefix" id="0x7f070031" />
+    <public type="string" name="qp_screen_timeout_sec" id="0x7f070032" />
+    <public type="string" name="qp_screen_timeout_text" id="0x7f070033" />
+    <public type="string" name="qp_shutdown_text" id="0x7f070034" />
+    <public type="string" name="qp_yes" id="0x7f070035" />
+    <public type="string" name="autobright" id="0x7f070036" />
+    <public type="string" name="accessibility_battery_level" id="0x7f070037" />
+    <public type="string" name="usb_storage_activity_title" id="0x7f070038" />
+    <public type="string" name="twelve_hour_time_format" id="0x7f070039" />
+    <public type="string" name="twenty_four_hour_time_format" id="0x7f07003a" />
+    <public type="string" name="status_bar_settings_battery_meter_format" id="0x7f07003b" />
     <public type="style" name="TextAppearance.StatusBar.Title" id="0x7f080000" />
     <public type="style" name="TextAppearance.StatusBar.IntruderAlert" id="0x7f080001" />
+    <public type="style" name="CustomWindowTitleBackground" id="0x7f080002" />
+    <public type="style" name="CustomTheme" id="0x7f080003" />
     <public type="id" name="dischargetext" id="0x7f090000" />
     <public type="id" name="padding" id="0x7f090001" />
     <public type="id" name="subtitle" id="0x7f090002" />
@@ -245,4 +387,25 @@
     <public type="id" name="number" id="0x7f090026" />
     <public type="id" name="content" id="0x7f090027" />
     <public type="id" name="close" id="0x7f090028" />
+    <public type="id" name="qp_button" id="0x7f090029" />
+    <public type="id" name="qp_button_image" id="0x7f09002a" />
+    <public type="id" name="qp_button_indic" id="0x7f09002b" />
+    <public type="id" name="qp_button_text" id="0x7f09002c" />
+    <public type="anim" name="slide_out_left_basic" id="0x7f0a0000" />
+    <public type="anim" name="slide_out_right_basic" id="0x7f0a0001" />
+    <public type="array" name="qp_reboot_actions" id="0x7f0b0000" />
+    <public type="array" name="qp_reboot_options" id="0x7f0b0001" />
+    <public type="array" name="qp_timeouts" id="0x7f0b0002" />
+    <public type="color" name="notification_header_text_color" id="0x7f0c0000" />
+    <public type="color" name="notification_number_text_color" id="0x7f0c0001" />
+    <public type="color" name="status_bar_carrier_label_text" id="0x7f0c0002" />
+    <public type="color" name="status_bar_date_text" id="0x7f0c0003" />
+    <public type="color" name="status_bar_clear_all_button_text" id="0x7f0c0004" />
+    <public type="color" name="status_bar_tracking_background" id="0x7f0c0005" />
+    <public type="color" name="quickpanel_text" id="0x7f0c0006" />
+    <public type="color" name="quickpanel_text_shadow" id="0x7f0c0007" />
+    <public type="color" name="black" id="0x7f0c0008" />
+    <public type="color" name="red" id="0x7f0c0009" />
+    <public type="color" name="clickabletitlebg" id="0x7f0c000a" />
+    <public type="color" name="transparent" id="0x7f0c000b" />
 </resources>

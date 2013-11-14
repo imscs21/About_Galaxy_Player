@@ -36,4 +36,31 @@ rotation"</string>
     <string name="fullchargetitle">Info</string>
     <string name="fullchargebattery">"Battery fully charged.
 Unplug charger"</string>
+    <string name="qp_airplane_text">Airplane</string>
+    <string name="qp_autosync_text">Auto Sync</string>
+    <string name="qp_brightness_text">Brightness</string>
+    <string name="qp_dc_text">Data</string>
+    <string name="qp_flashlight_text">Flashlight</string>
+    <string name="qp_gps_text">GPS</string>
+    <string name="qp_lockscreen_text">Lockscreen</string>
+    <string name="qp_network_mode_text">Network Mode</string>
+    <string name="qp_no">Cancel</string>
+    <string name="qp_reboot">Reboot</string>
+    <string name="qp_reboot_dlg_title">Reboot Option</string>
+    <string name="qp_reboot_download">Download Mode</string>
+    <string name="qp_reboot_recovery">Recovery Mode</string>
+    <string name="qp_reboot_text">Reboot</string>
+    <string name="qp_screen_timeout_hr">hour(s)</string>
+    <string name="qp_screen_timeout_min">minute(s)</string>
+    <string name="qp_screen_timeout_prefix">"Screen timeout set to: "</string>
+    <string name="qp_screen_timeout_sec">second(s)</string>
+    <string name="qp_screen_timeout_text">Screen Timeout</string>
+    <string name="qp_shutdown_text">Shutdown</string>
+    <string name="qp_yes">OK</string>
+    <string name="autobright">Auto</string>
+	<string name="accessibility_battery_level">Battery %d percent.</string>
+	<string name="usb_storage_activity_title">USB Mass Storage</string>
+	<string name="twelve_hour_time_format">h:mm aa</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+	<string name="status_bar_settings_battery_meter_format">%d%%</string>
 </resources>

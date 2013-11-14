@@ -917,31 +917,52 @@
     invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     iput-object v1, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mAsyncStorageHandler:Landroid/os/Handler;
-
-    .line 145
-    const/4 v1, 0x5
-
-    invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->requestWindowFeature(I)Z
+    #
+    #.line 145
+    #const/4 v1, 0x5
+    #
+    #invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->requestWindowFeature(I)Z
 
     .line 146
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->setProgressBarIndeterminateVisibility(Z)V
 
-    .line 158
-    const v1, 0x10403c8
+    #.line 158
+    #const v1, 0x10403c8
+    #
+    #invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->getString(I)Ljava/lang/String;
+    #
+    #move-result-object v1
+    #
+    #invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->setTitle(Ljava/lang/CharSequence;)V
+    #
+	.line 158
+	const v0, 0x7f080003
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->setTitle(Ljava/lang/CharSequence;)V
-
+    invoke-virtual {p0, v0}, Lcom/android/systemui/usb/UsbStorageActivity;->setTheme(I)V
+	
+	.line 159
+	const/4 v2, 0x7
+	
+	invoke-virtual {p0, v2}, Lcom/android/systemui/usb/UsbStorageActivity;->requestWindowFeature(I)Z
+	
     .line 160
     const v1, 0x1090073
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->setContentView(I)V
 
+	.line 161
+	const/4 v2, 0x7
+	
+	invoke-virtual {p0}, Lcom/android/systemui/usb/UsbStorageActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const v1, 0x7f03000e
+
+    invoke-virtual {v0, v2, v1}, Landroid/view/Window;->setFeatureInt(II)V
+	
     .line 162
     const v1, 0x1020006
 

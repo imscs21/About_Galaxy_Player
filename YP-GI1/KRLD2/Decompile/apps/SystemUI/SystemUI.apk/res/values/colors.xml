@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_header_text_color">#ffffffff</color>
+    <color name="notification_number_text_color">#ffffffff</color>
+    <color name="status_bar_carrier_label_text">#ffffffff</color>
+    <color name="status_bar_date_text">#ffffffff</color>
+    <color name="status_bar_clear_all_button_text">#ffffffff</color>
+    <color name="status_bar_tracking_background">#ff212121</color>
+    <color name="quickpanel_text">#ffffffff</color>
+    <color name="quickpanel_text_shadow">#ff000000</color>
+	<color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+	<color name="clickabletitlebg">#ff1245AB</color>
+	<color name="transparent">#00000000</color>
+</resources>
